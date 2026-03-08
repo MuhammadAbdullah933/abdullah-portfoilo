@@ -171,4 +171,7 @@
 @media (max-width: 600px) {
   .edu-grid { grid-template-columns: 1fr; }
   .cert-grid { grid-template-columns: 1fr; }
+  .certifications { padding: 20px 16px; }
+  .cert-card--action { flex-wrap: nowrap; }
+  .cert-card--action span { font-size: 0.82rem; }
 }

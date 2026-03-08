@@ -206,4 +206,6 @@ a.contact-card__value:hover {
 }
 @media (max-width: 500px) {
   .form-row { grid-template-columns: 1fr; }
+  .contact-card { padding: 12px 14px; }
+  .contact-card__value { font-size: 0.82rem; }
 }

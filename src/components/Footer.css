@@ -119,4 +119,6 @@
     grid-template-columns: 1fr;
     gap: 32px;
   }
+  .footer { padding: 40px 16px 0; }
+  .footer__logo { font-size: 1.2rem; }
 }

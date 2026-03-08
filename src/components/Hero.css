@@ -267,12 +267,35 @@
 
 /* Responsive */
 @media (max-width: 860px) {
+  .hero__inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    padding: 60px 20px 32px;
+  }
   .hero__name { font-size: 2.6rem; }
   .hero__stats { grid-template-columns: repeat(2, 1fr); }
+  .hero__actions { justify-content: center; }
+  .hero__social { justify-content: center; }
 }
 @media (max-width: 600px) {
-  .hero__inner { gap: 32px; padding-top: 48px; }
+  .hero__inner { gap: 24px; padding-top: 48px; }
   .hero__name { font-size: 2rem; }
+  .hero__greeting { font-size: 0.9rem; }
+  .hero__role { font-size: 1.1rem; }
+  .hero__desc { font-size: 0.88rem; }
   .avatar-ring { width: 150px; height: 150px; }
-  .avatar-circle { font-size: 2.5rem; }
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+  .hero__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero__stats { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .stat-card strong { font-size: 1.4rem; }
 }

@@ -286,3 +286,41 @@
   font-size: 0.85rem;
   padding: 10px 20px;
 }
+
+@media (max-width: 600px) {
+  .timeline {
+    padding: 0 0 0 24px;
+  }
+  .timeline-dot {
+    left: -20px;
+    width: 12px;
+    height: 12px;
+    top: 20px;
+  }
+  .timeline-line {
+    left: 7px;
+  }
+  .card.timeline-card {
+    padding: 18px 16px;
+  }
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .exp-role { font-size: 1rem; }
+  .exp-duties li { font-size: 0.84rem; }
+  .cert-modal {
+    max-height: 95vh;
+    border-radius: 10px;
+  }
+  .cert-modal__body {
+    min-height: 200px;
+  }
+  .cert-modal__header {
+    padding: 12px 14px;
+  }
+  .cert-modal__footer {
+    padding: 10px 14px;
+  }
+}
