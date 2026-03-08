@@ -1,0 +1,174 @@
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.edu-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transcript-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  align-self: flex-start;
+}
+
+.cert-card--action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cert-card--action span {
+  flex: 1;
+}
+
+.cert-view-btn--sm {
+  padding: 4px 14px;
+  font-size: 0.78rem;
+  background: var(--green-primary);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.cert-view-btn--sm:hover {
+  background: var(--green-dark);
+}
+
+.edu-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: var(--green-light);
+  color: var(--green-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.edu-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.edu-period {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.edu-grade {
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: var(--green-light);
+  color: var(--green-accent);
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+.edu-grade.grade--progress {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.edu-degree {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.3;
+}
+
+.edu-institution {
+  font-size: 0.88rem;
+  color: var(--green-primary);
+  font-weight: 600;
+}
+
+.edu-highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 4px;
+}
+.edu-highlights li {
+  font-size: 0.84rem;
+  color: var(--text-medium);
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.6;
+}
+.edu-highlights li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--green-mid);
+  font-size: 0.75rem;
+}
+
+/* Certifications */
+.certifications {
+  background: var(--off-white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  border: 1px solid var(--border);
+}
+
+.cert-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  font-size: 0.88rem;
+  color: var(--text-medium);
+  font-weight: 500;
+  transition: all var(--transition);
+}
+.cert-card:hover {
+  border-color: var(--green-mid);
+  box-shadow: var(--shadow);
+}
+
+.cert-icon {
+  color: var(--green-primary);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 960px) {
+  .edu-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .edu-grid { grid-template-columns: 1fr; }
+  .cert-grid { grid-template-columns: 1fr; }
+}
